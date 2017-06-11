@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="SlickMenu/slicknav.min.css" />
+		<script src="SlickMenu/jquery.slicknav.min.js"></script>
+		<script>
+			$(function(){
+			$('#navigation').slicknav({
+				prependTo:'#background_wrapper',
+				label: '',
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			$('.nav-toggle').click(function(){
+				//get collapse content selector
+									var collapse_content_selector = $(this).attr('href');
+		
+				//make the collapse content to be shown or hide
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function(){
+				if($(this).css('display')=='none'){
+		//change the button label to be 'Show'
+					toggle_switch.html('Show');
+				}else{
+		//change the button label to be 'Hide'
+					toggle_switch.html('Hide');
+				}
+				});
+			});
+		
+				});
+		</script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Bobifit Store</title>
+	</head>
+	<body id="store">
+		<div id="wrapper">
+			<div id="main">
+				<div id="background_wrapper">
+					<header id="header">
+						<div > <img id="logo" src="images/LOGO_header.png" alt="Logo bBobifit"> </div>
+						<nav id="navigation">
+							<ul>
+								<li><a href="bobifit_home_html5.html">home</a></li>
+								<li><a href="bobifit_training.html">training</a></li>
+								<li><a href="bobifit_gallery.html">gallery</a></li>
+								<li id="current_li"><a href="">store</a></li>
+								<li><a href="bobifit_contact.html">contacts</a></li>
+							</ul>
+						</nav>
+					</header>
+					<div id="title-wrapper">
+						<h4>
+							GYM AESTHETICS
+						</h4>
+					</div>
+				</div>
+					<div id="content">
+						<h2>
+							Functional Clothing For SPORTS & FITNESS
+						</h2>
+						<h1 class="store_section">MEN'S WEAR</h1>
+						<div class="container_aragment">
+							<div class="mens">
+								<img src="images/Vector_Tshirt_1.png" alt="image">
+								<div class="pricetag">
+									<h3>Online trainer T-Shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+							<div class="mens">
+								<img src="images/Vector_Tshirt_2.png" alt="bla">
+								<div class="pricetag">
+									<h3>Within Reach T-Shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+							<div class="mens">
+								<img src="images/Vector_Tshirt_3.png" alt="">
+								<div class="pricetag">
+									<h3>Bosris Slavchev T-shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+						</div>
+						<h1 id="womens" class="store_section" >WOMEN'S WEAR</h1>
+						<div class="container_aragment">
+							<div class="mens">
+								<img src="images/Women_Tshirt_2.png" alt="image">
+								<div class="pricetag">
+									<h3>Online trainer T-Shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+							<div class="mens">
+								<img src="images/Women_Tshirt_1.png" alt="bla">
+								<div class="pricetag">
+									<h3>Within Reach T-Shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+							<div class="mens">
+								<img src="images/Women_Tshirt_3.png" alt="">
+								<div class="pricetag">
+									<h3>Bosris Slavchev T-shirt € 19.99</h3>
+									<img src="images/shopping_cart.png" alt="image">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<footer id="footer">
+					<div id="navigation_f">
+						<ul>
+							<li><a href="bobifit_home_html5.html">home</a></li>
+							<li><a href="bobifit_training.html">training</a></li>
+							<li><a href="bobifit_gallery.html">gallery</a></li>
+							<li><a href="bobifit_store.html"><span class="current">store</span></a></li>
+							<li><a href="">bio</a></li>
+							<li><a href="">videos</a></li>
+							<li><a href="">blog</a></li>
+							<li><a href="bobifit_contact.html">about</a></li>
+						</ul>
+						
+					</div>
+					<div id="copyright">
+						<p >© Copyright 2015 Something Something All rights reserved. All materials presented on this website are protected by copyright.
+						Designed and developed by Mighty Boosh Media</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Bobifit Gallery</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="SSS-master/sss/sss.min.js"></script>
+		<link rel="stylesheet" href="SlickMenu/slicknav.min.css" />
+		<script src="SlickMenu/jquery.slicknav.min.js"></script>
+		<link rel="stylesheet" href="SSS-master/sss/sss.css" type="text/css" media="all">
+		<script>
+			jQuery(function($) {
+			$('.slider').sss();
+			});
+		</script>
+		<script>
+		$(function(){
+		$('#navigation').slicknav({
+		prependTo:'#background_wrapper',
+		label: '',
+		});
+		});
+		</script>
+		<script>
+			$(document).ready(function() {
+			$('.nav-toggle').click(function(){
+				//get collapse content selector
+									var collapse_content_selector = $(this).attr('href');
+		
+				//make the collapse content to be shown or hide
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function(){
+				if($(this).css('display')=='none'){
+		//change the button label to be 'Show'
+					toggle_switch.html('Show');
+				}else{
+		//change the button label to be 'Hide'
+					toggle_switch.html('Hide');
+				}
+				});
+			});
+		
+				});
+		</script>
+	</head>
+	<body id="gallery">
+		<div id="wrapper">
+			<div id="main">
+				<div id="background_wrapper">
+					<header id="header">
+						<div >
+							<img id="logo" src="images/LOGO_header.png" alt="Logo bBobifit">
+						</div>
+						<nav id="navigation">
+							<ul>
+								<li><a href="bobifit_home_html5.html">home</a></li>
+								<li><a href="bobifit_training.html">training</a></li>
+								<li id="current_li"><a href="bobifit_gallery.html">gallery</a></li>
+								<li><a href="bobifit_store.html">store</a></li>
+								<li><a href="bobifit_contact.html">contacts</a></li>
+							</ul>
+						</nav>
+					</header>
+					<div id="content">
+						<div id="slider_wrapper">
+							<div class="slider">
+								<img src="images/slide_image1.jpg" />
+								<img src="images/slide_image2.jpg" />
+								<img src="images/slide_image3.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav id="socialbar">
+					<h2>connect</h2>
+					<div id="images">
+						<img class="social_img" src="images/social_icon_facebook.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_tweeter.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_googleplus.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_pinterest.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_instagram.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_youtube.png" alt="social Bobifit">
+					</div>
+				</nav>
+				
+				<footer id="footer">
+					<nav id="navigation_f">
+						<ul>
+							<li><a href="bobifit_home_html5.html">home</a></li>
+							<li><a href="bobifit_training.html">training</a></li>
+							<li><a href="bobifit_gallery.html"><span class="current">gallery</span></a></li>
+							<li><a href="bobifit_store.html">store</a></li>
+							<li><a href="">bio</a></li>
+							<li><a href="">videos</a></li>
+							<li><a href="">blog</a></li>
+							<li><a href="bobifit_contact.html">about</a></li>
+						</ul>
+					</nav>
+					<div id="copyright">
+						<p >© Copyright 2015 Something Something All rights reserved. All materials presented on this website are protected by copyright.
+						Designed and developed by Mighty Boosh Media</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

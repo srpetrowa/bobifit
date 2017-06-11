@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="SlickMenu/slicknav.min.css" />
+		<script src="SlickMenu/jquery.slicknav.min.js"></script>
+		<script>
+			$(function(){
+			$('#navigation').slicknav({
+				prependTo:'#background_wrapper',
+				label: '',
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			  $('.nav-toggle').click(function(){
+				//get collapse content selector
+				var collapse_content_selector = $(this).attr('href');					
+	 
+				//make the collapse content to be shown or hide
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function(){
+				  if($(this).css('display')=='none'){
+	                                //change the button label to be 'Show'
+					toggle_switch.html('Show');
+				  }else{
+	                                //change the button label to be 'Hide'
+					toggle_switch.html('Hide');
+				  }
+				});
+			  });
+	 
+			});	
+		</script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Bobifit Training</title>
+	</head>
+		<body id="training">
+			<div id="wrapper">
+				<div id="main">
+					<div id="background_wrapper">
+					<header>  
+						<div > <img id="logo" src="images/LOGO_header.png" alt="Logo bBobifit"> </div>
+						<nav id="navigation">
+							<ul>
+								<li><a href="bobifit_home_html5.html">home</a></li>
+								<li id="current_li"><a href="bobifit_training.html">training</a></li>
+								<li><a href="bobifit_gallery.html">gallery</a></li>
+								<li><a href="bobifit_gallery.html">store</a></li>
+								<li><a href="bobifit_contact.html">contacts</a></li>
+							</ul>
+						</nav>
+					</header>
+						<div id="title-wrapper">
+							<h1>GREATNESS<br>
+								IS WITHIN REACH</h1>
+						</div>
+					</div>
+					<div id="content">  
+						<div id="information">
+
+							<p>Boris Slavchev’s workout methods are specifically designed for reaching the maximum genetic potential in a natural way.</p>
+							<button href="#collapse1" class="nav-toggle">Show More</button>
+							<p id="to_hide">By ordering any of the training programs you will receive individual approach and professional attitude.</p>
+							<div id="collapse1" style="display:none">
+								<p id="hidden">By ordering any of the training programs you will receive individual approach and professional attitude.</p>
+							</div>
+
+						</div>
+					</div>
+						<article class="article">
+							<h2>PERSONAL EXERCISE PROGRAM</h2>
+							<ul class="first_column">
+								<li class="one">Well rounded workout routine</li>
+								<li class="one">Designed specifically for your goals</li>
+								<li class="one">Video of the correct execution of every single exercise </li>
+							</ul>
+							<ul class="second_column">
+								<li class="two">Inclludes the best combination of exercises, number of reps, number of sets and rest time</li>
+								<li class="two">One free consultation with guaranteed response within 24 hours </li>
+							</ul>
+							<button>Order Now</button>
+						</article>
+						<article class="article">
+							<h2>PERSONAL NUTRITION PLAN</h2>
+							<ul class="first_column">
+								<li>Health and lifestyle consultation</li>
+								<li>Recommended supplements (if u want to use supplements)</li>
+								<li>Recommendations on calories and portionssingle exercise </li>
+							</ul>
+							<ul class="second_column">
+								<li>One free consultation with guaranteed response within 24 hours</li>
+								<li>Nutrition plan</li>
+							</ul>
+							<button>Order Now</button>
+						</article>
+
+					<footer id="footer">  
+						<nav id="navigation_f">
+							<ul>
+									<li><a href="bobifit_home_html5.html">home</a></li>
+									<li><a href="bobifit_training.html"><span class="current">training</span></a></li>
+									<li><a href="bobifit_gallery.html">gallery</a></li>
+									<li><a href="bobifit_store.html">store</a></li>
+									<li><a href="">bio</a></li>
+									<li><a href="">videos</a></li>
+									<li><a href="">blog</a></li>
+									<li><a href="bobifit_contact.html">about</a></li>
+								</ul>
+						</nav>
+						<div id="copyright">
+							<p>© Copyright 2015 Something Something All rights reserved. All materials presented on this website are protected by copyright.
+								Designed and developed by Mighty Boosh Media</p>
+						</div>
+						</footer>
+				</div>
+			</div>
+		</body>
+</html>

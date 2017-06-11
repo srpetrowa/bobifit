@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="SlickMenu/slicknav.min.css" />
+		<script src="SlickMenu/jquery.slicknav.min.js"></script>
+		<script>
+			$(function(){
+			$('#navigation').slicknav({
+				prependTo:'#background_wrapper',
+				label: '',
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			$('.nav-toggle').click(function(){
+				//get collapse content selector
+									var collapse_content_selector = $(this).attr('href');
+		
+				//make the collapse content to be shown or hide
+				var toggle_switch = $(this);
+				$(collapse_content_selector).toggle(function(){
+				if($(this).css('display')=='none'){
+		//change the button label to be 'Show'
+					toggle_switch.html('Show');
+				}else{
+		//change the button label to be 'Hide'
+					toggle_switch.html('Hide');
+				}
+				});
+			});
+		
+				});
+		</script>
+		
+		<link rel="stylesheet" href="style.css" />
+		<title>Bobifit Startseite</title>
+	</head>
+	<body id="home">
+		<div id="wrapper">
+			<div id="main">
+				<div id="background_wrapper">
+					<header id="header">
+						<div > <img id="logo" src="images/LOGO_header.png" alt="Logo bBobifit"> </div>
+						<nav id="navigation">
+							<ul>
+								<li id="current_li"><a href="bobifit_home_html5.html">home</a></li>
+								<li><a href="bobifit_training.html">training</a></li>
+								<li><a href="bobifit_gallery.html">gallery</a></li>
+								<li><a href="bobifit_store.html">store</a></li>
+								<li><a href="bobifit_contact.html">contacts</a></li>
+							</ul>
+						</nav>
+					</header>
+				<div id="title_wrapper">
+					<h1>BORIS</h1>
+					<h1>SLAVCHEV</h1>
+				</div>
+				</div>
+				<div id="content">
+					<div id="information">
+						<h2>Welcome<span></span></h2>
+						<p>I'm Boris Slavchev  and I've dedicated my life to bodybuilding and since 2006 I've been taking part in different competitions. </p>
+						<button href="#collapse1" class="nav-toggle">Show More</button>
+						<p id ="to_hide">As a personal trainer I've been able to transform the bodies of many  people.
+							Due to the questions about my every day training and nutrition I decided to create my personal website – bobifitt.com, where everyone will have the chance to receive everything needed for reaching the maximum physical potential without using steroids.</p>
+						<div id="collapse1" style="display:none">
+							<p id ="hidden">As a personal trainer I've been able to transform the bodies of many  people.
+								Due to the questions about my every day training and nutrition I decided to create my personal website – bobifitt.com, where everyone will have the chance to receive everything needed for reaching the maximum physical potential without using steroids.</p>
+						</div>
+
+					</div>
+				</div>
+				<nav id="socialbar">
+					<h2>connect</h2>
+					<div id="images">
+						<img class="social_img" src="images/social_icon_facebook.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_tweeter.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_googleplus.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_pinterest.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_instagram.png" alt="social Bobifit">
+						<img class="social_img" src="images/social_icon_youtube.png" alt="social Bobifit">
+					</div>
+				</nav>
+				<div id="article_container">
+					<article class="article" id="one">
+						<a href="bobifit_home_html5.html.html">Personal Training</a>
+					</article>
+					<article class="article" id="two">
+						<a href="bobifit_home_html5.html.html">Nutrition Plan</a>
+					</article>
+					<article class="article" id="three">
+						<a href="bobifit_home_html5.html.html">Pro Tips</a>
+					</article>
+				</div>
+				
+				<footer id="footer">
+					<nav id="navigation_f">
+						<ul>
+							<li><a href="bobifit_home_html5.html"><span class="current">home</span></a></li>
+							<li><a href="bobifit_training.html">training</a></li>
+							<li><a href="bobifit_gallery.html">gallery</a></li>
+							<li><a href="bobifit_store.html">store</a></li>
+							<li><a href="">bio</a></li>
+							<li><a href="">videos</a></li>
+							<li><a href="">blog</a></li>
+							<li><a href="bobifit_contact.html">about</a></li>
+						</ul>
+					</nav>
+					<div id="copyright">
+						<p>© Copyright 2015 Something Something All rights reserved. All materials presented on this website are protected by copyright.
+						Designed and developed by Mighty Boosh Media</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
